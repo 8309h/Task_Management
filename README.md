@@ -21,8 +21,9 @@ Welcome to Task Manager API, a simple API for managing tasks.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/task-manager-api.git
-   cd task-manager-api
+  git clone https://github.com/8309h/Task_Management.git
+
+   cd Task_Management
    ```
 
 2. Install dependencies:
@@ -33,12 +34,12 @@ Welcome to Task Manager API, a simple API for managing tasks.
 3. Set up your environment variables by creating a `.env` file in the project root and adding the following:
    ```env
    PORT=3000
-   MONGODB_URI=your_mongodb_uri
+   mongoUrl=your_mongodb_uri
    ```
 
 4. Start the server:
    ```bash
-   npm start
+   npm run server
    ```
 
 ## Usage
@@ -53,8 +54,8 @@ Welcome to Task Manager API, a simple API for managing tasks.
   - Request body:
     ```json
     {
-      "title": "Task Title",
-      "description": "Task Description"
+      "title": "Task Title 1",
+      "description": "Task Description 1"
     }
     ```
 
@@ -104,9 +105,5 @@ curl -X PUT http://localhost:3000/api/tasks/:id/complete
 
 Feel free to contribute to this project. Fork it, create a pull request, and your contributions will be considered.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
 
-Replace placeholders like `your-username`, `your_mongodb_uri`, and adjust the details based on your specific project.
