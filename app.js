@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser'); // Corrected import
+const bodyParser = require('body-parser');
 const { connection } = require('./config/db');
 const {router} = require("./routes/routes")
 require("dotenv").config();
@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.get('/' , (req,res) => {
-    res.send("Welcome To TaskManager");
+    res.send("Welcome To Task Managent");
 })
 app.use("/api",router);
 app.listen(process.env.PORT, async () => { 
@@ -18,7 +18,7 @@ app.listen(process.env.PORT, async () => {
         
     } catch (error) {
         console.log(error.message);
-        console.log('No connection');
+        console.log('Not connection');
     }
     console.log(`server is running on port ${process.env.PORT}`);
     
