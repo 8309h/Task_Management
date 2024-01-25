@@ -70,7 +70,7 @@ Welcome to Task Manager API, a simple API for managing tasks.
 - **DELETE /api/tasks/:id**
   - Delete a task.
 
-- **PUT /api/tasks/:id/complete**
+- **PATCH /api/tasks/:id/complete**
   - Mark a task as completed.
 
 ### Examples
